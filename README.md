@@ -176,6 +176,18 @@ pkginstall cmake
 pkginstall clifm
 pkginstall abduco
 pkginstall dvtm
+pkginstall glibc-repo
+pkginstall glibc-runner
+
+#for tesseract
+sh /sdcard/termuxfree/termux_remountscript.sh;source /sdcard/tenv.sh 
+pkginstall tesseract
+pkginstall cloneit
+cd /data/data/com.termux/files/usr/share
+rm -f -r tessdata
+cloneit https://github.com/tesseract-ocr/tessdata
+cloneit https://github.com/tesseract-ocr/tessdata_fast
+cloneit https://github.com/tesseract-ocr/tessdata_best
 
 # Good package overview 
 
