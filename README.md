@@ -59,3 +59,44 @@ pipuninstall cython
 ```sh
 python
 ```
+
+### Some good Python stuff
+```sh
+pkginstall python
+pkginstall opencv-python
+pkginstall python-apsw
+pkginstall python-apt
+pkginstall python-bcrypt
+pkginstall python-contourpy
+pkginstall python-cryptography
+pkginstall python-ensurepip-wheels
+pkginstall python-greenlet
+pkginstall python-grpcio
+pkginstall python-lameenc
+pkginstall python-libsass
+pkginstall python-lxml
+pkginstall python-msgpack
+pkginstall python-numpy
+pkginstall python-numpy-static
+pkginstall python-pillow
+pkginstall python-pip
+pkginstall python-pyarrow
+pkginstall python-pynvim
+pkginstall python-sabyenc3
+pkginstall python-static
+pkginstall python-tkinter
+pkginstall python-tldp
+pkginstall python-torch
+pkginstall python-torch-static
+pkginstall python-torchaudio
+pkginstall python-torchvision
+pkginstall python-xcbgen
+pkginstall python-xlib
+pkginstall vim-python
+pkginstall tur-repo
+pkginstall python-pandas
+```
+
+### Good package overview 
+
+https://github.com/Azathothas/Termux-Packages
