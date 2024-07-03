@@ -93,6 +93,10 @@ pkginstall python-torchvision
 pkginstall python-xcbgen
 pkginstall python-xlib
 pkginstall vim-python
+pkginstall python-pandas
+pkginstall python-pyqtwebengine
+pkginstall python-qscintilla
+pkginstall python-scipy
 
 # After installing tur-repro 
 pkginstall tur-repo
@@ -120,7 +124,7 @@ pkginstall python-tokenizers
 
 # pip packages that don't compile anything at setup, can be installed using pip
 # installing python packages 
-
+pkginstall ptpython
 pipinstall Cython
 pipinstall exceptdrucker
 pipinstall flatten_any_dict_iterable_or_whatsoever
@@ -130,8 +134,52 @@ pipinstall xmlhtml2pandas
 
 ```
 
-### Good package overview 
+### Some good packages 
+```
+pkginstall 7zip
+pkginstall aichat
+pkginstall android-tools
+pkginstall anewer
+pkginstall apkeep
+pkginstall bat
+pkginstall bftpd
+pkginstall bmon
+pkginstall bore
+pkginstall brook
+pkginstall c-script
+pkginstall chafa
+pkginstall cloneit
+pkginstall csview
+pkginstall fzf
+pkginstall recode
+pkginstall ripgrep
+pkginstall rustscan
+pkginstall rw
+pkginstall shell2http
+pkginstall sing-box
+pkginstall speedtest-go
+pkginstall srelay
+pkginstall strace
+pkginstall tesseract
+pkginstall tor
+pkginstall torsocks
+pkginstall vbindiff
+pkginstall vim-python
+pkginstall x11-repo
+pkginstall yazi
+pkginstall zsh
+pkginstall imagemagick
+pkginstall imagemagick-static
+pkginstall cpulimit
+pkginstall colordiff
+pkginstall cmake
+pkginstall clifm
+pkginstall abduco
+pkginstall dvtm
+
+# Good package overview 
 
 https://github.com/Azathothas/Termux-Packages
 
 https://github.com/termux-user-repository/tur
+```
