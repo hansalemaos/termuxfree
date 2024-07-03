@@ -31,6 +31,9 @@ sh /sdcard/termuxfree/termux_configure_termux.sh
 # each time you open an adb shell, you have to execute 
 source /sdcard/tenv.sh
 
+# if you want to make changes to the Termux folder (rw remount), use
+sh /sdcard/termuxfree/termux_remountscript.sh;source /sdcard/tenv.sh 
+
 # execute /sdcard/oenv.sh to set the old env (usually not necessary, because adb resets the env automatically each time you start it)
 source /sdcard/oenv.sh
 ```
