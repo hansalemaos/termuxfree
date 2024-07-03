@@ -44,6 +44,7 @@ source /sdcard/oenv.sh
 # If you install packages as root directly in your adb shell (pkg install), 
 # you will mess up your termux installation due to user rights. 
 # Termux (user u0_a136 in my case) has no rights to open files created by root (user 0) or shell (user 2000)
+# So, if you don't want to run a lot of chmod/chgrp/chown commands to repair your Termux installation, install packages using these commands:
 pkginstall python
 pkgreinstall python
 pkguninstall python
