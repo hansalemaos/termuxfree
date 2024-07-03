@@ -60,7 +60,7 @@ pipuninstall cython
 python
 ```
 
-### Some good Python stuff
+### Some good Python stuff (Don't use pip for them! It won't work!)
 ```sh
 pkginstall python
 pkginstall opencv-python
@@ -97,7 +97,7 @@ pkginstall vim-python
 # After installing tur-repro 
 pkginstall tur-repo
 
-# you can install 
+# you can install (Don't use pip for them! It won't work!)
 pkginstall python-pandas
 pkginstall python-brotli
 pkginstall python-cairo
@@ -118,10 +118,20 @@ pkginstall python-tiktoken
 pkginstall python-tls-client
 pkginstall python-tokenizers
 
+# pip packages that don't compile anything at setup, can be installed using pip
+# installing python packages 
+
+pipinstall Cython
+pipinstall exceptdrucker
+pipinstall flatten_any_dict_iterable_or_whatsoever
+pipinstall setuptools
+pipinstall xmlhtml2pandas
+
 
 ```
 
 ### Good package overview 
 
 https://github.com/Azathothas/Termux-Packages
+
 https://github.com/termux-user-repository/tur
