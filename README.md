@@ -93,10 +93,35 @@ pkginstall python-torchvision
 pkginstall python-xcbgen
 pkginstall python-xlib
 pkginstall vim-python
+
+# After installing tur-repro 
 pkginstall tur-repo
+
+# you can install 
 pkginstall python-pandas
+pkginstall python-brotli
+pkginstall python-cairo
+pkginstall python-fitsio
+pkginstall python-future
+pkginstall python-kivy
+pkginstall python-mitmproxy-wireguard
+pkginstall python-opengl
+pkginstall python-polars
+pkginstall python-pycryptodomex
+pkginstall python-pygame
+pkginstall python-pywavelets
+pkginstall python-scikit-image
+pkginstall python-scipy
+pkginstall python-seledroid
+pkginstall python-selenium-is-seledroid
+pkginstall python-tiktoken
+pkginstall python-tls-client
+pkginstall python-tokenizers
+
+
 ```
 
 ### Good package overview 
 
 https://github.com/Azathothas/Termux-Packages
+https://github.com/termux-user-repository/tur
