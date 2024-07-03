@@ -14,19 +14,19 @@ adb -s 127.0.0.1:5595 install "C:\Users\hansc\Downloads\termux-app_v0.118.1+gith
 adb -s 127.0.0.1:5595 push C:\termuxfree /sdcard
 ```
 
-### 3 open cmd.exe and start an ADB shell 
+### 3. open cmd.exe and start an ADB shell 
 
 ```sh
 adb -s 127.0.0.1:5595 shell 
 ```
 
-4) activate su and run the script termux_configure_termux.sh (do this only ONCE - takes about a minute to complete)
+### 4. activate su and run the script termux_configure_termux.sh (do this only ONCE - takes about a minute to complete)
 ```sh
 su 
 sh /sdcard/termuxfree/termux_configure_termux.sh
 ```
 
-5) Activate the Termux env in your ADB shell and use any Termux package outside Termux 
+### 5. activate the Termux env in your ADB shell and use any Termux package outside Termux 
 ```sh
 # each time you open an adb shell, you have to execute 
 source /sdcard/tenv.sh
@@ -38,10 +38,12 @@ sh /sdcard/termuxfree/termux_remountscript.sh;source /sdcard/tenv.sh
 source /sdcard/oenv.sh
 ```
 
-# After sourcing /sdcard/tenv.sh, you can install packages from the ADB shell like this:
+# 6. after sourcing /sdcard/tenv.sh, you can install packages from the ADB shell like this:
 ```sh
 # Note that all install commands will open the termux app to install packages.  
-# If you install packages as root directly in your adb shell, you will mess up your termux installation due to user rights
+# If you install packages as root directly in your adb shell (pkg install), 
+# you will mess up your termux installation due to user rights. 
+# Termux (user u0_a136 in my case) has no rights to open files created by root (user 0) or shell (user 2000)
 pkginstall python
 pkgreinstall python
 pkguninstall python
@@ -52,7 +54,7 @@ pipinstall cython
 pipuninstall cython
 
 ```
-# run commands like you would in termux 
+# 7. run commands like you would in termux 
 ```sh
 python
 ```
