@@ -124,7 +124,7 @@ pkginstall python-tokenizers
 
 # pip packages that don't compile anything at setup, can be installed using pip
 # installing python packages 
-pkginstall ptpython
+pipinstall ptpython
 pipinstall Cython
 pipinstall exceptdrucker
 pipinstall flatten_any_dict_iterable_or_whatsoever
