@@ -38,7 +38,7 @@ sh /sdcard/termuxfree/termux_remountscript.sh;source /sdcard/tenv.sh
 source /sdcard/oenv.sh
 ```
 
-# 6. after sourcing /sdcard/tenv.sh, you can install packages from the ADB shell like this:
+### 6. after sourcing /sdcard/tenv.sh, you can install packages from the ADB shell like this:
 ```sh
 # Note that all install commands will open the termux app to install packages.  
 # If you install packages as root directly in your adb shell (pkg install), 
@@ -54,7 +54,7 @@ pipinstall cython
 pipuninstall cython
 
 ```
-# 7. run commands like you would in termux 
+### 7. run commands like you would in termux 
 ```sh
 python
 ```
