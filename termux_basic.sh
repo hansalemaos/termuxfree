@@ -29,13 +29,13 @@ fi
 sh "$grand_permission_script" --grant 1 --package "$termuxpackagename"
 sed -i 's/# allow-external-apps = true/allow-external-apps = true/g' "$termux_props_file"
 
-for line in $(seq 1 $(echo -n -e "$allcmds\n" | wc -l)); do
-  script2execute="$(echo -n -e "$allcmds" | sed -n "${line}p" | sed 's/^-e[[:space:]]*//g' )"
-  echo -e "$add_before_cmd $script2execute $add_after_cmd" >>"$package_install_script_path"
+for line in $(seq 1 $(printf "%s" "$allcmds\n" | wc -l)); do
+  script2execute="$(printf "%s" "$allcmds" | sed -n "${line}p" | sed 's/^-e[[:space:]]*//g' )"
+  printf "%s\n" "$add_before_cmd $script2execute $add_after_cmd" >>"$package_install_script_path"
 done
 
-echo -e 'set > setcfg.sh' >>"$package_install_script_path"
-echo -e 'env > envcfg.sh' >>"$package_install_script_path"
+printf "%s\n" 'set > setcfg.sh' >>"$package_install_script_path"
+printf "%s\n" 'env > envcfg.sh' >>"$package_install_script_path"
 sleep 1
 sed -i 's/^-e[[:space:]]*//g' "$package_install_script_path"
 sleep 1

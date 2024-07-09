@@ -2,7 +2,7 @@
 check_if_mounted() {
     mountcheckervalue=0
     mountchecker="$(mount -v | grep -v 'rw' | grep 'ro' | awk 'BEGIN{FS="[\\(]+";}{print $2}' | awk 'BEGIN{FS="[\\),]+";}{if ($1 ~ /^ro$/){ print 1;exit}}')"
-    echo -e "$mountchecker"
+    printf "%s\n" "$mountchecker"
     mountcheckervalue=$((mountcheckervalue + mountchecker))
     return "$mountcheckervalue"
 }
