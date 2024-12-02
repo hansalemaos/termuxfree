@@ -1,7 +1,7 @@
 # termuxfree
 Run any Termux package as root (real root!) in your ADB shell
 
-## Tutorial in Brazilian Portugues - com German Accent :)
+## Tutorial in Brazilian Portugues - with a German Accent :)
 
 [![YT](https://i.ytimg.com/vi/QM_DAcAjBp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=QM_DAcAjBp8)
 [https://www.youtube.com/watch?v=QM_DAcAjBp8]()
