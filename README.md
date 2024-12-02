@@ -1,6 +1,11 @@
 # termuxfree
 Run any Termux package as root (real root!) in your ADB shell
 
+## Tutorial in Brazilian Portugues - com German Accent :)
+
+[![YT](https://i.ytimg.com/vi/QM_DAcAjBp8/maxresdefault.jpg)](https://www.youtube.com/watch?v=QM_DAcAjBp8)
+[https://www.youtube.com/watch?v=QM_DAcAjBp8]()
+
 ![](https://github.com/hansalemaos/termuxfree/blob/main/pythonasroot.png?raw=true)
 
 ### 1. Download Termux from GitHub 
