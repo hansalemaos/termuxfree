@@ -15,7 +15,7 @@ https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.11
 
 ```sh
 adb connect 127.0.0.1:5595
-adb -s 127.0.0.1:5595 install "C:\Users\hansc\Downloads\termux-app_v0.118.1+github-debug_x86_64.apk"
+adb -s 127.0.0.1:5595 install -g -t "C:\Users\hansc\Downloads\termux-app_v0.118.1+github-debug_x86_64.apk"
 adb -s 127.0.0.1:5595 push C:\termuxfree /sdcard
 ```
 
