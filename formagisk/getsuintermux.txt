@@ -1,0 +1,3 @@
+cd /data/data/com.termux/files/home 
+ln -s /system/bin/su su
+in Termux: ./su
